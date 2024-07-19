@@ -63,7 +63,7 @@ class UI {
     }
 
     static goto_todo_handler(event) {
-        if (event.target.classList.contains("container__card")) {
+        if (!event.target.classList.contains("card__btn")) {
             let id = this.getAttribute("id");
             window.location.href = `/todo.html?id=${id}`;
         }
