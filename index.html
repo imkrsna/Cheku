@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Cheku</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom imports -->
+    <link rel="stylesheet" href="./css/defaults.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script defer src="./js/defaults.js"></script>
+    <script defer type="module" src="./js/index.js"></script>
+</head>
+<body data-theme="blue">
+    <div class="navbar">
+        <a href="/" class="navbar__logo">Cheku</a>
+        <div class="navbar__items">
+            <div class="navbar__themes" id="navbar__themes">
+                <div class="navbar__theme navbar__theme--active" data-theme="blue"></div>
+                <div class="navbar__theme" data-theme="yellow"></div>
+                <div class="navbar__theme" data-theme="red"></div>
+                <div class="navbar__theme" data-theme="green"></div>
+                <div class="navbar__theme" data-theme="orange"></div>
+            </div>
+            <div class="navbar__toggle" id="navbar__toggle">
+                <img src="./img/theme.svg" alt="theme icon">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container__head">All Checklists</div>
+        <div class="container__body">
+            <ul class="container__cards" id="container__cards">
+                <li class="container__card container__card--add" id="container__card--add">
+                    <img src="./img/plus.svg" alt="plus icon">
+                </li>
+                <!-- <li class="container__card">
+                    <button class="card__btn"><img src="./img/trash.svg" alt="trash icon"></button>
+                    <div class="card__title">University Tasks</div>
+                </li> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
